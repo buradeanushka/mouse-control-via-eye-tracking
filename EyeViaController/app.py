@@ -12,6 +12,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def root():
+    return {"status": "ok", "service": "EyeViaController API", "message": "Hit /health for status"}
+
 @app.get("/health")
 def health_check():
     return {"status": "ok", "service": "EyeViaController API"}
