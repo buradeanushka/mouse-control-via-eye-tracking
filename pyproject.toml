@@ -1,0 +1,8 @@
+[project]
+name = "mouse-control-via-eye-tracking"
+version = "0.1.0"
+description = "EyeViaController FastAPI deployment"
+requires-python = ">=3.11"
+
+[tool.vercel]
+framework = "python"
